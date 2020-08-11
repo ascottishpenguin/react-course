@@ -1,12 +1,14 @@
 import React from "react";
+import { Route } from "react-router-dom";
+
 import HomePage from "./pages/hompeage/homepage.component";
-import './App.css'
+import "./App.css";
 
 
 function App() {
   return (
     <div>
-      <HomePage></HomePage>
+      <Route path='/' component={HomePage}/>
     </div>
   );
 }
